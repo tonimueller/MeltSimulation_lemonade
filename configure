@@ -50,11 +50,6 @@ for arg in "$@"; do
                 BUILDOPTION=${arg#*=}
                 echo "Build type set to "$BUILDOPTION
                 ;;
-        -DGSL_DIR=*)
-                CMAKE_ARGUMENTS+=${arg}" "
-                TESTOPTION=${arg#*=}
-                echo "GLS-lib is installed in "$TESTOPTION
-                ;;
         * )                     		
                 echo "unknown parameter"
                 usage         
